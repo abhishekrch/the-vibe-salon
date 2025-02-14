@@ -1,11 +1,11 @@
-// User.ts
-import { Schema, model, Document } from 'mongoose';
+// user-model.ts
+import { Schema, model, Document } from "mongoose";
 
 // Define the Gender enum
 enum Gender {
-  Male = 'male',
-  Female = 'female',
-  Other = 'other',
+  Male = "male",
+  Female = "female",
+  Other = "other",
 }
 
 // Define the User interface
@@ -34,4 +34,4 @@ const userSchema = new Schema<User>(
 );
 
 // Create and export the User model
-export const User = model<User>('User', userSchema);
+export const User = model<User>("User", userSchema);
